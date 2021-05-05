@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 #***********************************************************
 # Software License Agreement (BSD License)
 #
@@ -35,7 +35,7 @@
 
 # Author: Wim Meeussen
 
-from __future__ import with_statement
+
 
 import roslib; roslib.load_manifest('turtlebot_calibration')
 import yaml
@@ -255,8 +255,8 @@ def writeParamsToCalibrationFile(newparams):
     if os.path.isfile(calib_file):
         f = open(calib_file, 'r')
         docs = yaml.load_all(f)
-        d = docs.next()
-        for k,v in newparams.iteritems():
+        d = next(docs)
+        for k,v in newparams.items():
             d[k] = v
         newparams = d
         f.close()

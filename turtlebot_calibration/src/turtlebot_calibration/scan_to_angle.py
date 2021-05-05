@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 #***********************************************************
 # Software License Agreement (BSD License)
 #
@@ -35,7 +35,7 @@
 
 # Author: Wim Meeussen
 
-from __future__ import with_statement
+
 
 import roslib; roslib.load_manifest('turtlebot_calibration')
 import yaml
