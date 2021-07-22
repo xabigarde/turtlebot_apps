@@ -35,7 +35,7 @@
     <param name="frequency"    type="double" value="7.0"/>
   </node>
   <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser4"
-    args="-0.0095 0.0095 0.225 0.0 0.0 0.0 /base_footprint /laser_frame 100" />
+    args="-0.0095 0.0095 0.225 -3.1415 0.0 0.0 /base_footprint /laser_frame 100" />
 
 
   <!-- Gmapping -->
