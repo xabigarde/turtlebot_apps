@@ -8,7 +8,7 @@
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!--- Run AMCL -->
-  <include file="$(find turtlebot_navigation)/config/amcl_turtlebot.launch">
+  <include file="$(find turtlebot_navigation)/param/amcl_turtlebot.launch">
     <arg name="scan_topic" value="scan_filtered" />
   </include>
 
